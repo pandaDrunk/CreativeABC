@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B1A2FA9-EEDD-4E25-B276-7DCE4AB02178}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EGLPABC082_UI</RootNamespace>
+    <AssemblyName>EGLPABC082_UI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="SHF_BT, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SHFDB\SHF_BT.dll</HintPath>
+    </Reference>
+    <Reference Include="SHF_DA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SHFDB\SHF_DA.dll</HintPath>
+    </Reference>
+    <Reference Include="SHF_UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SHFDB\SHF_UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.0.9.41461, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiEGLPABC_CourseEdit.resx">
+      <DependentUpon>uiEGLPABC_CourseEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiEGLPABC_CourseShow.resx">
+      <DependentUpon>uiEGLPABC_CourseShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiEGLPABC_CourseShow1.resx">
+      <DependentUpon>uiEGLPABC_CourseShow1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiEGLPABC_Drogen.resx">
+      <DependentUpon>uiEGLPABC_Drogen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiEGLPABC_Monkey.resx">
+      <DependentUpon>uiEGLPABC_Monkey.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiEGLPABC_ScoreShow1.resx">
+      <DependentUpon>uiEGLPABC_ScoreShow1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiEGLPABC_ScoreShow2.resx">
+      <DependentUpon>uiEGLPABC_ScoreShow2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiEGLPABC_TestEdit.resx">
+      <DependentUpon>uiEGLPABC_TestEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiEGLPABC_TestShowH0.resx">
+      <DependentUpon>uiEGLPABC_TestShowH0.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiEGLPABC_TestShowH1.resx">
+      <DependentUpon>uiEGLPABC_TestShowH1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiEGLPABC_WordList.resx">
+      <DependentUpon>uiEGLPABC_WordList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiEGLPABC_WorkMain.resx">
+      <DependentUpon>uiEGLPABC_WorkMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiEGLPABC_AppMain.resx">
+      <DependentUpon>uiEGLPABC_AppMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiTyping01_Option.resx">
+      <DependentUpon>uiTyping01_Option.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiEGLPABC_TestShowH3.resx">
+      <DependentUpon>uiEGLPABC_TestShowH3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiEGLPABC_TestShowH2.resx">
+      <DependentUpon>uiEGLPABC_TestShowH2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="uiEGLPABC_CourseEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiEGLPABC_CourseEdit.Designer.cs">
+      <DependentUpon>uiEGLPABC_CourseEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiEGLPABC_CourseShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiEGLPABC_CourseShow.Designer.cs">
+      <DependentUpon>uiEGLPABC_CourseShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiEGLPABC_CourseShow1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiEGLPABC_CourseShow1.Designer.cs">
+      <DependentUpon>uiEGLPABC_CourseShow1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiEGLPABC_Drogen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiEGLPABC_Drogen.Designer.cs">
+      <DependentUpon>uiEGLPABC_Drogen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiEGLPABC_Monkey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiEGLPABC_Monkey.Designer.cs">
+      <DependentUpon>uiEGLPABC_Monkey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiEGLPABC_ScoreShow1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiEGLPABC_ScoreShow1.Designer.cs">
+      <DependentUpon>uiEGLPABC_ScoreShow1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiEGLPABC_ScoreShow2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiEGLPABC_ScoreShow2.Designer.cs">
+      <DependentUpon>uiEGLPABC_ScoreShow2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiEGLPABC_TestEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiEGLPABC_TestEdit.Designer.cs">
+      <DependentUpon>uiEGLPABC_TestEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiEGLPABC_TestShowH0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiEGLPABC_TestShowH0.Designer.cs">
+      <DependentUpon>uiEGLPABC_TestShowH0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiEGLPABC_TestShowH1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiEGLPABC_TestShowH1.Designer.cs">
+      <DependentUpon>uiEGLPABC_TestShowH1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiEGLPABC_WordList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiEGLPABC_WordList.Designer.cs">
+      <DependentUpon>uiEGLPABC_WordList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiEGLPABC_WorkMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiEGLPABC_WorkMain.designer.cs">
+      <DependentUpon>uiEGLPABC_WorkMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiEGLPABC_AppMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiEGLPABC_AppMain.designer.cs">
+      <DependentUpon>uiEGLPABC_AppMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiTyping01_Option.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiTyping01_Option.Designer.cs">
+      <DependentUpon>uiTyping01_Option.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiEGLPABC_TestShowH3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiEGLPABC_TestShowH3.Designer.cs">
+      <DependentUpon>uiEGLPABC_TestShowH3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiEGLPABC_TestShowH2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiEGLPABC_TestShowH2.Designer.cs">
+      <DependentUpon>uiEGLPABC_TestShowH2.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\016p.gif" />
+    <None Include="Resources\008h.gif" />
+    <None Include="Resources\007g.gif" />
+    <None Include="Resources\0080.gif" />
+    <None Include="Resources\gif144.gif" />
+    <None Include="Resources\gif004%282%29.gif" />
+    <None Include="Resources\jianbihua0011.jpg" />
+    <None Include="Resources\jianbihua001.jpg" />
+    <None Include="Resources\jianbihua00.jpg" />
+    <None Include="Resources\jianbihua002.jpg" />
+    <Content Include="Source\猴子爬树藤.txt" />
+    <Content Include="Source\连线与涂鸦.txt" />
+    <Content Include="Source\飞越毒龙潭.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EGLPABC082_BT\EGLPABC082_BT.csproj">
+      <Project>{3D01A6E7-54C5-44FD-81C8-3239730E5196}</Project>
+      <Name>EGLPABC082_BT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
